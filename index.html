@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Welcome to Muqri Qawiem portfolio website" name="description">
+    <meta
+        content="muqri-qawiem,muqri,qawiem,portfolio-website,personal-website,html5,css,javascript,website,website-idea,website-design,github-pages"
+        name="keywords">
+    <meta content="Muqri Qawiem" name="author">
+
+    <!--========================================== FAVICON ===================================================-->
+    <link rel="shortcut icon" href="./favicon1.png" type="image/x-icon">
+
+    <!--========================================== BOXICONS ===================================================-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========================================== SWIPER CSS ===================================================-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--========================================== ICONSCOUT CDN ===================================================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!--========================================== CSS ===================================================-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!--========================================== PRELOADER ===================================================-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./assets/js/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <title>Muqri Qawiem</title>
+</head>
+
+<body>
+    <!--========================================== PRELOADER ===================================================-->
+    <div id="preloader">
+        <div class="p"><iconify-icon icon="line-md:loading-twotone-loop" width="100" height="50"></iconify-icon>LOADING...</div>
+    </div>
+    <!--========================================== HEADER ===================================================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <h2><a href="#" class="nav__logo">Muqri Qawiem</a></h2>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <div class="hover-home">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <iconify-icon icon="akar-icons:home" width="25" height="25"></iconify-icon>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="hover-about">
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <iconify-icon icon="cil:user" width="25" height="25"></iconify-icon>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="hover-skills">
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <iconify-icon icon="fluent:wrench-screwdriver-20-regular" width="25" height="25"></iconify-icon>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="hover-portfolio">
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <iconify-icon icon="bytesize:portfolio" width="25" height="25"></iconify-icon>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="hover-contact">
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <iconify-icon icon="ant-design:mail-outlined" width="25" height="25"></iconify-icon>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <!----------------------------------------THEME CHANGE BUTTON--------------------------------------->
+            <i class='bx bx-moon bx-md change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--========================================== MAIN ===================================================-->
+    <main class="main">
+        <!--========================================== HOME ===================================================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Muqri Qawiem</h1>
+                    <h3 class="home__education">Computer Science Student</h3>
+
+                    <div class="home__buttons">
+                        <a download="MUHAMMAD MUQRI QAWIEM BIN HANIZAM - CV" href="./assets/pdf/Resume.pdf" class="button button--ghost">
+                            Download CV <iconify-icon inline icon="line-md:download-loop" width="20"></iconify-icon>
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="./assets/img/about-pic.svg" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/muqri-qawiem/" target="_blank" class="home__social-link" title="Linkedin">
+                        <iconify-icon icon="line-md:linkedin" width="25" height="25"></iconify-icon>
+                    </a>
+                    <a href="https://github.com/muqriqawiem" target="_blank" class="home__social-link" title="Github">
+                        <iconify-icon icon="line-md:github-loop" width="25" height="25"></iconify-icon>
+                    </a>
+                    <a href="mailto:muhammadmuqri32@gmail.com" target="_blank" class="home__social-link" title="Gmail">
+                        <iconify-icon icon="line-md:email-twotone" width="25" height="25"></iconify-icon>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--========================================== ABOUT ===================================================-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">Let me introduce myself</h2>
+
+            <div class="about__container container grid">
+                <img src="./assets/img/about.svg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <iconify-icon icon="emojione-v1:flag-for-malaysia" width="40" height="40"></iconify-icon>
+                            <h3 class="about__title">Nationality</h3>
+                            <span class="about__subtitle">Malaysia</span>
+                        </div>
+
+                        <div class="about__box">
+                            <iconify-icon icon="fa-solid:university" width="40" height="40"></iconify-icon>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">University of Malaya</span>
+                        </div>
+
+                        <div class="about__box">
+                            <iconify-icon icon="heroicons:academic-cap-20-solid" height="40" width="40"></iconify-icon>
+                            <h3 class="about__title">Degree</h3>
+                            <span class="about__subtitle">Bachelor of Computer Science (Information System)</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        I'm an inquisitive, energetic Computer Science student skilled in leadership, with a strong foundation
+                        in Maths, and cross-platform coding. I'm seeking to leverage solid skills in collaboration,
+                        communication, and development as a programmer.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me <iconify-icon inline icon="line-md:coffee-half-empty-twotone-loop" width="25"></iconify-icon></a>
+                </div>
+            </div>
+        </section>
+
+        <!--========================================== SKILLS ===================================================-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My abilities</span>
+            <h2 class="section__title">Some skills I have learned</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:html-5" width="25"></iconify-icon>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <div class="skills__bar skills__html">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">95%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:css-3" width="25"></iconify-icon>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div class="skills__bar skills__css">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:javascript" width="25"></iconify-icon>
+                                    <span class="skills__name">JavaScript </span>
+                                </div>
+                                <div class="skills__bar skills__js">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage"> 65%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="vscode-icons:file-type-reactjs" width="25"></iconify-icon>
+                                    <span class="skills__name">React</span>
+                                </div>
+                                <div class="skills__bar skills__reactjs">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">50%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="bi:brush" width="25"></iconify-icon>
+                                    <span class="skills__name">UX/UI</span>
+                                </div>
+                                <div class="skills__bar skills__ux">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">65%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:php" width="25"></iconify-icon>
+                                    <span class="skills__name">PHP</span>
+                                </div>
+                                <div class="skills__bar skills__php">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">60%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:nodejs-icon" width="25"></iconify-icon>
+                                    <span class="skills__name">NodeJS</span>
+                                </div>
+                                <div class="skills__bar skills__nodejs">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">50%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon inline icon="logos:python" width="25"></iconify-icon>
+                                    <span class="skills__name">Python</span>
+                                </div>
+                                <div class="skills__bar skills__python">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">75%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon icon="logos:java" width="25"></iconify-icon>
+                                    <span class="skills__name">Java</span>
+                                </div>
+                                <div class="skills__bar skills__java">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <iconify-icon icon="logos:c-plusplus" width="25"></iconify-icon>
+                                    <span class="skills__name">C++</span>
+                                </div>
+                                <div class="skills__bar skills__cPlusPlus">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========================================== SERVICES ===================================================-->
+        <!--
+        <section class="services section">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Product <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Product Designer</h3>
+                            <p class="services__modal-description">Service with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I create ux element interactions.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Ui/Ux <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Ui/Ux Designer</h3>
+                            <p class="services__modal-description">Service with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I create ux element interactions.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Visual <br> Designer</h3>
+
+                    <span class="services__button">
+                        See more <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Visual Designer</h3>
+                            <p class="services__modal-description">Service with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I create ux element interactions.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check services__modal-icon'></i>
+                                    <p class="services__modal-info">
+                                        Design and mockups of products for companies.
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!--========================================== WORK ===================================================-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Check out my creations</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".app">App</span>
+                <span class="work__item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="./assets/img/music-streaming-bg.png" alt="project cover" class="work__img">
+
+                    <h3 class="work__title">Music Streaming Website</h3>
+                    <p class="work__description">Listen to the list of musics online !</p>
+
+                    <a href="https://github.com/muqriqawiem/Music-Streaming-Webiste" target="_blank"
+                        class="work__button-code">
+                        Code<i class='bx bx-code-alt bx-sm work__icon'></i>
+                    </a>
+                    <a href="https://muqriqawiem.github.io/Music-Streaming-Webiste/" target="_blank"
+                        class="work__button-demo">
+                        Demo<i class='bx bx-navigation bx-sm work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="./assets/img/weather-app-bg.png" alt="project cover" class="work__img">
+
+                    <h3 class="work__title">Weather Today</h3>
+                    <p class="work__description">Weather forecast using OpenWeather API.</p>
+
+                    <a href="https://github.com/muqriqawiem/Weather-Today" target="_blank" class="work__button-code">
+                        Code<i class='bx bx-code-alt bx-sm work__icon'></i>
+                    </a>
+                    <a href="https://muqriqawiem.github.io/Weather-Today/" target="_blank" class="work__button-demo">
+                        Demo<i class='bx bx-navigation bx-sm work__icon'></i>
+                    </a>
+                </div>
+
+<!--
+                <div class="work__card mix design">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Brand design</h3>
+                    <p class="work__description">weather app using html,css & javascript</p>
+
+                    <a href="#" target="_blank" class="work__button-code">
+                        Code<i class='bx bx-code-alt bx-sm work__icon'></i>
+                    </a>
+                    <a href="#" target="_blank" class="work__button-demo">
+                        Demo<i class='bx bx-navigation bx-sm work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Web design</h3>
+                    <p class="work__description">weather app using html,css & javascript</p>
+
+                    <a href="#" target="_blank" class="work__button-code">
+                        Code<i class='bx bx-code-alt bx-sm work__icon'></i>
+                    </a>
+                    <a href="#" target="_blank" class="work__button-demo">
+                        Demo<i class='bx bx-navigation bx-sm work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="./assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">App movil</h3>
+                    <p class="work__description">weather app using html,css & javascript</p>
+
+                    <a href="#" target="_blank" class="work__button-code">
+                        Code<i class='bx bx-code-alt bx-sm work__icon'></i>
+                    </a>
+                    <a href="#" target="_blank" class="work__button-demo">
+                        Demo<i class='bx bx-navigation bx-sm work__icon'></i>
+                    </a>
+                </div>
+-->
+            </div>
+        </section>
+
+        <!--========================================== TESTIMONIALS ===================================================-->
+        <!--
+        <section class="testimonial section" id="testimonial">
+            <span class="section__subtitle">My client says</span>
+            <h2 class="section__title">Testimonial</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial1.png" alt="" class="testimonial__image">
+
+                        <h3 class="testimonial__name">John Doe</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were followed step by step and with good
+                            results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial2.png" alt="" class="testimonial__image">
+
+                        <h3 class="testimonial__name">Paula Vusy</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were followed step by step and with good
+                            results.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="./assets/img/testimonial3.png" alt="" class="testimonial__image">
+
+                        <h3 class="testimonial__name">Sara Cill</h3>
+                        <p class="testimonial__description">
+                            A really good job, all aspects of the project were followed step by step and with good
+                            results.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        -->
+
+        <!--========================================== CONTACT ===================================================-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">I'd Love To Connect With You.</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <iconify-icon icon="cib:gmail" width="100" height="50"></iconify-icon>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data"></span>
+
+                            <a href="mailto:muhammadmuqri32@gmail.com" target="_blank" class="contact__button">Email me
+                                <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <iconify-icon icon="line-md:linkedin" width="100" height="50"></iconify-icon>
+                            <h3 class="contact__card-title">Linkedin</h3>
+                            <span class="contact__card-data"></span>
+
+                            <a href="https://www.linkedin.com/in/muqri-qawiem/"
+                                target="_blank" class="contact__button">Let's connect<i
+                                    class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <iconify-icon icon="line-md:instagram"  width="100" height="50"></iconify-icon>
+                            <h3 class="contact__card-title">Instagram</h3>
+                            <span class="contact__card-data"></span>
+
+                            <a href="https://instagram.com/qawiieem" target="_blank" class="contact__button">Let's follow<i
+                                    class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Let me get to know more about you.</h3>
+
+                    <form action="https://formspree.io/f/myyvzkze" method="POST" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" class="contact__form-input" placeholder="Your name" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" class="contact__form-input" placeholder="Your email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"
+                                class="contact__form-input" required></textarea>
+                        </div>
+
+                        <button class="button">Send Message <iconify-icon icon="cil:send"></iconify-icon></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========================================== FOOTER ===================================================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!--<h1 class="footer__title">Muqri Qawiem</h1>-->
+
+            <!--<ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+
+                <li>
+                    <a href="#testimonial" class="footer__link">Testimonial</a>
+                </li>
+            </ul>-->
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/muqri-qawiem" target="_blank" class="footer__social-link">
+                    <iconify-icon icon="line-md:linkedin" width="25"></iconify-icon>
+                </a>
+
+                <a href="https://github.com/muqriqawiem" target="_blank" class="footer__social-link">
+                    <iconify-icon icon="line-md:github-loop" width="25"></iconify-icon>
+                </a>
+
+                <a href="mailto:muhammadmuqri32@gmail.com" target="_blank" class="footer__social-link">
+                    <iconify-icon icon="simple-icons:gmail" width="25"></iconify-icon>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                <iconify-icon icon="bx:code-block" width="25"></iconify-icon> by <strong>Muqri Qawiem</strong> with <iconify-icon icon="twemoji:red-heart" style="color: #d92323;" width="20"></iconify-icon>.
+            </span>
+        </div>
+    </footer>
+
+    <!---------------------------------------------BACK TO TOP BUTTON ------------------------------------------------>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><iconify-icon icon="line-md:arrow-right-circle" rotate="270deg" width="25" height="25"></iconify-icon></button>
+
+    <!--========================================== SCROLL REVEAL ===================================================-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--========================================== SWIPER JS ===================================================-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--========================================== MIXITUP FILTER ===================================================-->
+    <script src="./assets/js/mixitup.min.js"></script>
+
+    <!--========================================== MAIN JS ===================================================-->
+    <script src="./assets/js/main.js"></script>
+
+    <!--========================================== ICONIFY ===================================================-->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+</body>
+
+</html>
