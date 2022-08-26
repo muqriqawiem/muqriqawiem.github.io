@@ -167,25 +167,5 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-/*=============== LOADING ANIMATION ===============*/
-paceOptions = {
-    ajax: true,
-    document: true,
-    eventLag: false
-};
-
-Pace.on('done', function () {
-    $('.p').delay(700).animate({ top: '80%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
-
-    $('#preloader').delay(700).animate({ top: '-100%' }, 2000, $.bez([0.19, 1, 0.22, 1]));
-
-    TweenMax.from(".main", 2, {
-        delay: 1,
-        y: 10,
-        opacity: 0,
-        ease: Expo.easeInOut
-    })
-});
-
 /*----------------------------------------------*/
 
