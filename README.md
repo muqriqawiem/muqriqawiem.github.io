@@ -1,6 +1,6 @@
 # Personal Website
 
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/muqriqawiem/muqriqawiem.github.io/commits/master)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/muqriqawiem/muqriqawiem.github.io/commits/main)
 [![Website shields.io](https://img.shields.io/badge/Website-Up-yellow)](http://muqriqawiem.github.io/)
 
 ## Features 📋
