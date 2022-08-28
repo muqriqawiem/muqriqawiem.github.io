@@ -126,25 +126,25 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: '2500',
-    delay: 400,
+    duration: '2000',
+    delay: 200,
     //reset: true,
 })
 
 sr.reveal('.home__data')
-sr.reveal('.home__handle', { delay: 800 })
-sr.reveal('.home__social', '.home__scroll', { delay: 800, origin: 'bottom' })
+sr.reveal('.home__handle', { delay: 200 })
+sr.reveal('.home__social', '.home__scroll', { delay: 200, origin: 'bottom' })
 sr.reveal('.about__info', { origin: 'left' })
-sr.reveal('.about__description', { delay: 800, origin: 'right' })
-sr.reveal('.button', { delay: 800, origin: 'bottom' })
-sr.reveal('.skills__container', { delay: 800 , origin: 'left' })
+sr.reveal('.about__description', { delay: 200, origin: 'right' })
+sr.reveal('.button', { delay: 200, origin: 'bottom' })
+sr.reveal('.skills__container', { delay: 500 , origin: 'left' })
 sr.reveal('.services__card', { origin: 'right' })
 sr.reveal('.work__filters', { origin: 'left' })
-sr.reveal('.work__container', { delay: 800, origin: 'bottom' })
+sr.reveal('.work__container', { delay: 200, origin: 'bottom' })
 sr.reveal('.testimonial__container', { origin: 'top' })
 sr.reveal('.contact__info', { origin: 'top' })
-sr.reveal('.contact__form', { delay: 800, origin: 'bottom' })
-sr.reveal('.button', { delay: 800, origin: 'bottom' })
+sr.reveal('.contact__form', { delay: 200, origin: 'bottom' })
+sr.reveal('.button', { delay: 200, origin: 'bottom' })
 
 /*=============== BACK TO TOP BUTTON ===============*/
 //Get the button:

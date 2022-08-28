@@ -259,7 +259,7 @@ body.light-theme {
 .nav__logo {
   color: var(--first-color);
   font-weight: var(--font-semibold);
-  font-size: larger;
+  font-size: var(--biggest-font-size);
   transition: .4s;
 }
 
@@ -316,7 +316,7 @@ body.light-theme {
 .home__container {
   position: relative;
   row-gap: 4.5rem;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 
 .home__data {
@@ -363,10 +363,10 @@ body.light-theme {
 }
 
 .home__buttons {
-  display: flex;
-  justify-content: center;
+  display:block;
+  justify-content:center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .home__social,
@@ -780,7 +780,7 @@ body.light-theme {
 
 .work__button-code:hover .work__icon,
 .work__button-demo:hover .work__icon {
-  transform: translateX(.25rem);
+  transform: translateY(-.25rem);
 }
 
 .work__icon {
@@ -1341,7 +1341,7 @@ body.light-theme {
 
 /* Portfolio */
 .hover-portfolio::before {
-  content: 'Portfolio';
+  content: 'Projects';
   border-radius: none;
   position: absolute;
   bottom: 4rem;
