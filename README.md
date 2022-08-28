@@ -9,7 +9,7 @@
 ⚡️ Scroll animation using <a href="https://scrollrevealjs.org/">ScrollRevealJS</a>.</br>
 ⚡️ Sorting animation using <a href="https://www.kunkalabs.com/mixitup/">MixItUp</a> from KunkaLabs.</br>
 ⚡️ Icons are taken from <a href="https://iconify.design/">Iconify</a>.</br>
-⚡️ Easy to modify.\
+⚡️ Easy to modify.
 
 ## Sections 📚
 ✔️ Home\
