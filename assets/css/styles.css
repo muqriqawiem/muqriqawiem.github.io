@@ -230,12 +230,14 @@ body.light-theme {
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: 2rem;
+  transition: .4s;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  transition: .4s;
 }
 
 /*=============== HEADER & NAV===============*/
@@ -263,6 +265,7 @@ body.light-theme {
   font-size: var(--biggest-font-size);
   transition: .4s;
   font-family: 'Grand Hotel', cursive;
+  border: 1px solid transparent;
 }
 
 .nav__logo:hover {
@@ -279,7 +282,15 @@ body.light-theme {
   backdrop-filter: blur(10px);
   transition: .4s;
   /* for light mode animation */
+  /* border: 1px solid transparent; */
 }
+
+/* .nav__menu:hover{
+  color: var(--text-color);
+  transition: .4s;
+  background: transparent;
+  border-color: var(--first-color);
+} */
 
 .nav__list {
   display: flex;
@@ -288,25 +299,34 @@ body.light-theme {
 }
 
 .nav__link:hover {
-  scale: 130%;
+  scale: 120%;
   transition: .4s;
+  color: var(--title-color);
+  background: transparent;
+  border-color: var(--title-color);
 }
 
 .nav__link {
-  color: var(--text-color);
+  color: var(--title-color);
   font-size: 1.25rem;
   padding: .4rem;
   display: flex;
   border-radius: 5rem;
+  border: 2px solid transparent;
+  transition: .4s;
 }
 
 /* Active link */
 .active-link {
-  background: linear-gradient(180deg,
+  /* background: linear-gradient(180deg,
       hsla(var(--first-hue), var(--sat), var(--lig), 1),
-      hsla(var(--first-hue), var(--sat), var(--lig), .2));
-  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
-  color: var(--title-color);
+      hsla(var(--first-hue), var(--sat), var(--lig), .2)); */
+  /*box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4); */
+  background: transparent;
+  color: var(--text-color);
+  border: 0.5px solid var(--text-color);
+  font-size: 1.25rem;
+  border-radius: 5rem;
 }
 
 /* Change background header */
@@ -335,15 +355,18 @@ body.light-theme {
   display: block;
   color: var(--title-color);
   margin-bottom: .25rem;
+  transition: .4s;
 }
 
 .home__education {
   color: var(--text-color);
   margin-bottom: 2.5rem;
+  transition: .4s;
 }
 
 .home__name {
   font-size: var(--biggest-font-size);
+  transition: .4s;
 }
 
 .home__img {
@@ -365,8 +388,8 @@ body.light-theme {
 }
 
 .home__buttons {
-  display:block;
-  justify-content:center;
+  display: block;
+  justify-content: center;
   align-items: center;
   gap: 1.25rem;
 }
@@ -385,6 +408,7 @@ body.light-theme {
 
 .home__scroll {
   padding-bottom: 5rem;
+  transition: .4s;
 }
 
 .home__social-link {
@@ -396,13 +420,16 @@ body.light-theme {
   display: flex;
   font-size: 1rem;
   transition: .4s;
+  border: 1px solid transparent;
 }
 
 .home__social-link:hover {
-  background-color: var(--first-color);
-  color: #fff;
-  scale: 110%;
+  color: var(--text-color);
+  scale: 115%;
   transition: .4s;
+  background: transparent;
+  border-color: var(--first-color);
+  transform: translateX(3px);
 }
 
 .home__social::after {
@@ -440,11 +467,13 @@ body.light-theme {
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .4s;
+  border: 1px solid transparent;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
-  color: var(--body-color);
+  color: var(--text-color);
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 .button--ghost {
@@ -483,6 +512,12 @@ body.light-theme {
   border-radius: .75rem;
   padding: .75rem .5rem;
   transition: .4s;
+  border: 1px solid transparent;
+}
+
+.about__box:hover{
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 .about__icon {
@@ -514,8 +549,13 @@ body.light-theme {
 .skills__content {
   background-color: var(--container-color);
   border-radius: 1.25rem;
-  transition: .4s;
-  /* for light mode animation */
+  transition: .4s; /* for light mode animation */
+  border: 1px solid transparent;
+}
+
+.skills__content:hover{
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 .skills__title {
@@ -732,14 +772,20 @@ body.light-theme {
   padding: .25rem .75rem;
   font-weight: var(--font-medium);
   border-radius: .5rem;
+  transition: .4s;
 }
 
 .work__card {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 1rem;
-  transition: .4s;
-  /* for light mode animation */
+  transition: .4s; /* for light mode animation */
+  border: 1px solid transparent;
+}
+
+.work__card:hover{
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 .work__img {
@@ -751,6 +797,7 @@ body.light-theme {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
+  transition: .4s;
 }
 
 .work__description {
@@ -767,6 +814,7 @@ body.light-theme {
   align-items: center;
   column-gap: .25rem;
   float: left;
+  cursor: pointer;
 }
 
 .work__button-demo {
@@ -778,6 +826,7 @@ body.light-theme {
   column-gap: .25rem;
   float: right;
   margin-right: 45%;
+  cursor: pointer;
 }
 
 .work__button-code:hover .work__icon,
@@ -840,6 +889,7 @@ body.light-theme {
   text-align: center;
   font-size: var(--h3-font-size);
   margin-bottom: 1.5rem;
+  transition: .4s;
 }
 
 .contact__info {
@@ -852,8 +902,13 @@ body.light-theme {
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
-  transition: .4s;
-  /* for light mode animation */
+  transition: .4s; /* for light mode animation */
+  border: 1px solid transparent;
+}
+
+.contact__card:hover{
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 .contact__card-icon {
@@ -976,6 +1031,12 @@ body.light-theme {
   border-radius: .25rem;
   font-size: 1rem;
   display: inline-flex;
+  border: 1px solid transparent;
+}
+
+.footer__social-link:hover{
+  background: transparent;
+  color: var(--title-color);
 }
 
 .footer__copy {
@@ -1255,7 +1316,7 @@ body.light-theme {
   /* Place the button 30px from the right */
   z-index: auto;
   /* Make sure it does not overlap */
-  border: none;
+  border: 1px solid transparent;
   /* Remove borders */
   outline: none;
   /* Remove outline */
@@ -1276,8 +1337,10 @@ body.light-theme {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  /* background-color: #555; */
   /* Add a dark-grey background on hover */
+  background: transparent;
+  border-color: var(--first-color);
 }
 
 /*=============== HOVER NAV BUTTON ===============*/
