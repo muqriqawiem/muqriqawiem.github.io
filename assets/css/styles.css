@@ -276,6 +276,15 @@ body.light-theme {
   border-color: var(--first-color);
 }
 
+.light-theme .work__button-code,
+.light-theme .work__button-demo{
+  color: var(--title-color);
+}
+
+.light-theme .work-button{
+  background-color: var(--first-color-alt);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -884,35 +893,47 @@ body.light-theme {
 
 .work__button-code {
   width: max-content;
-  color: var(--first-color);
+  color: var(--body-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
   column-gap: .25rem;
   float: left;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: .4s;
 }
 
 .work__button-demo {
   width: max-content;
-  color: var(--first-color);
+  color: var(--body-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
   column-gap: .25rem;
-  float: right;
+  float: left;
   margin-right: 45%;
   cursor: pointer;
-}
-
-.work__button-code:hover .work__icon,
-.work__button-demo:hover .work__icon {
-  transform: translateY(-.25rem);
+  border: 1px solid transparent;
+  transition: .4s;
 }
 
 .work__icon {
   font-size: 1rem;
+}
+
+.work-button{
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
   transition: .4s;
+  border: 1px solid transparent;
+}
+
+.work-button:hover{
+  transform: translateY(-.50rem);
 }
 
 /* Active item work*/
