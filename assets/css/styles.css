@@ -37,7 +37,7 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
+  --tiny-font-size: .636rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -619,10 +619,12 @@ body.light-theme {
 
 .about__subtitle {
   font-size: var(--tiny-font-size);
+  text-align: justify;
 }
 
 .about__description {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /*=============== SKILLS ===============*/
