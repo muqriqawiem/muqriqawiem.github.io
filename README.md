@@ -8,6 +8,9 @@ To view the website, simply navigate to <a href="https://muqriqawiem.github.io/"
 ## Contribution
 As this is a personal website, contributions are not expected. However, if you notice any issues or have suggestions for improvements, feel free to submit an issue or pull request.
 
+## License
+This project is licensed under the MIT License. See the [LICENSE] file for details.
+
 ## Contact
 If you have any questions or comments about the website, feel free to contact me at [muhammadmuqri32@gmail.com].
 
